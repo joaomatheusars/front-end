@@ -12,6 +12,21 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      listStyleImage:{
+        checkmark:'url("/Iconcheck.svg")'
+      },
+      colors: {
+        grayButton: '#42454A',
+        grayInput: '#F5F5F5',
+        grayFooter: '#42454A',
+        background: '#DBDBDB',
+        bgbg:'#FAFAFA',
+        bgray: '#D8D8D8',
+      },
+      textColor: {
+        grayMenu: '#42454A',
+        whiteFooter: '#FBFBFB',
+      }
     },
   },
   plugins: [],

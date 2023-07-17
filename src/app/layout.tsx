@@ -1,8 +1,11 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Poppins, Ubuntu, Calistoga } from 'next/font/google'
+import HeaderMenu from '@/components/HeaderMenu'
+import Footer from '@/components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const ubuntu = Ubuntu({ subsets: ['latin'], weight:[ '300','400', '500', '700']})
+const calistoga = Calistoga({subsets: ['latin-ext'], weight:[ '400']})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={ubuntu.className}>
+        <HeaderMenu />
+        {children}
+        <Footer />
+        </body>
     </html>
   )
 }
